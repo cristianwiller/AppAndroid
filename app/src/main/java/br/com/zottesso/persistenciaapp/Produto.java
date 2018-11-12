@@ -8,6 +8,7 @@ import com.orm.SugarRecord;
 */
 public class Produto extends SugarRecord {
 
+
     private String nome;
     private double valor;
 
