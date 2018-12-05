@@ -4,13 +4,19 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import com.orm.SchemaGenerator;
 import com.orm.SugarContext;
 import com.orm.SugarDb;
+
+import org.w3c.dom.Text;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     private Button salvar;
 
     private Button listarProdutos;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         valor = (EditText) findViewById(R.id.editValor);
         salvar = (Button) findViewById(R.id.btnSalvar);
         listarProdutos = (Button) findViewById(R.id.btnListar);
+
+
 
         // Evento de clique no botão salvar
         salvar.setOnClickListener(new View.OnClickListener() {
@@ -97,6 +107,10 @@ public class MainActivity extends AppCompatActivity {
         //p.setValor(3.80);
         // chamar o método save()
         //p.save();
+
+            //listview
+
+
 
     }
 }
